@@ -1,3 +1,3 @@
 module.exports = {
-    default: `--import tests/steps/*.js tests/features/**/*.feature`,
+    default: `--import tests/steps/**/*.js tests/features/**/*.feature`,
 }

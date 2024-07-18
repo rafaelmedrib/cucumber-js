@@ -1,0 +1,17 @@
+Feature: POST User API
+
+    The server must be capable of creating new users.
+
+    Rule: it must be possible to create a new user
+
+        Example: creating a new user
+            Given a user with the following data
+            """json
+            {
+                "name": "John Doe",
+                "email": "johndoe@fakemail.not"
+            }
+            """
+            When I create the user
+            Then the response status code must be 201
+            And the response body must conform with the "POST_user" contract
