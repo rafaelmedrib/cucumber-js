@@ -1,4 +1,4 @@
-Feature: POST User API
+Feature: User Registration API
 
     - The server must be capable of registering new users.
 

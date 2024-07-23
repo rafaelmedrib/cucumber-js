@@ -1,4 +1,4 @@
-Feature: GET Posts API
+Feature: Posts Query API
 
     - The server must be able to list all posts.
     - The server must be able to list a post by its ID.

@@ -1,4 +1,4 @@
-Feature: GET User API
+Feature: Query Users API
 
     - The server must be capable of returning user information by its ID.
     - The server must be capable of returning all users.
