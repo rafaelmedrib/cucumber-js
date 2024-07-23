@@ -9,13 +9,10 @@
   "author": "",
   "license": "ISC",
   "description": "",
-  "devDependencies": {
+  "dependencies": {
     "@cucumber/cucumber": "^10.8.0",
     "chai": "^5.1.1",
     "pactum": "^3.7.0",
-    "puppeteer": "^22.13.1"
-  },
-  "dependencies": {
     "pactum-matchers": "^1.1.7"
   }
 }
