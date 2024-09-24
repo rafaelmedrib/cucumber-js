@@ -1,6 +1,6 @@
 const { When, After } = require("@cucumber/cucumber");
 const { spec } = require("pactum");
-const { BASE_URL, USERS_API } = require("../../config/apis");
+const { BASE_URL, USERS_API } = require("../../config/constants");
 
 let pactum = spec();
 
