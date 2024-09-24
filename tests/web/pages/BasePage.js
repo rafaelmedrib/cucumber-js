@@ -30,7 +30,7 @@ class BasePage {
     }
 
     async snapshot(name) {
-        await this.page.screenshot({ path: `./reports/screenshots/${name}.png` });
+        await this.page.screenshot({ path: `./reports/screenshots/${Date.now()}_${name}.png` });
     }
 }
 
