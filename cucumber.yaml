@@ -1,0 +1,15 @@
+api:
+  format:
+    - "html:reports/cucumber-report-api.html"
+  require:
+    - tests/api/steps/**/*.js
+  paths:
+    - tests/api/features/**/*.feature
+
+web:
+  format:
+    - "html:reports/cucumber-report-web.html"
+  require:
+    - tests/web/steps/**/*.js
+  paths:
+    - tests/web/features/**/*.feature

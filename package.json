@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "api": "cucumber-js --format html:reports/cucumber-report-api.html --require tests/api/steps/**/*.js tests/api/features/**/*.feature",
-    "web": "cucumber-js --format html:reports/cucumber-report-web.html --require tests/web/steps/**/*.js tests/web/features/**/*.feature"
+    "api": "cucumber-js -p api",
+    "web": "cucumber-js -p web"
   },
   "keywords": [],
   "author": "",
