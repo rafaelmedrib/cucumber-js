@@ -1,7 +1,9 @@
+@API @UserRegistration
 Feature: User Registration API
 
     - The server must be capable of registering new users.
 
+    @UserRegistration_R01
     Rule: it must be possible to create a new user
 
         Example: creating a new user
