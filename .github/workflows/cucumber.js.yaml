@@ -6,7 +6,7 @@ on:
       - master
 
 jobs:
-  cucumberjs:
+  api-tests:
     runs-on: ubuntu-latest
 
     steps:
@@ -21,8 +21,26 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Install playwright
-        run: npx playwright install
-
       - name: Run tests
-        run: npm test
+        run: npm test -- --tags "@API"
+
+  web-tests:
+  runs-on: ubuntu-latest
+
+  steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 18
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Install playwright
+      run: npx playwright install
+
+    - name: Run tests
+      run: npm test -- --tags "@WEB"
